@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="selector.css">
+</head>
+<body>
+    <div>
+        <!-- In CSS we have diff. types of selectors -->
+
+        <!-- Element selectors -->
+
+        <style>
+
+            h1{
+                color: red;
+            }
+            p{
+                color: blue;
+            }
+        </style>
+        <div>
+            <h1>Element Selector</h1>
+            <p>This is a paragraph in Element.</p>
+        </div>
+
+        <!-- Class selectors -->
+
+        <!-- Class selectors are represented using . 
+         and once declared gets applied to the complete html page -->
+
+        <!-- <style>
+            .container{
+                background-color: rgb(59, 66, 59);
+            }
+            .container h1{
+                color: red;
+            }
+            .container p{
+                color: whitesmoke;
+            }
+           
+        </style> -->
+
+        <div class="container">
+            <h1>Class Selector</h1>
+            <p>This is a paragraph in className.</p>
+        </div>
+
+        <!-- ID selectors -->
+
+        <!-- ID selectors are represented using # 
+         and once declared gets applied to the complete html page -->
+
+
+        <div id="container">
+            <h1>ID Selector</h1>
+            <p>This is a paragraph in ID selection.</p>
+        </div>
+
+        <!-- Universal Selector -->
+
+        <!-- Universal selectors are represented using * 
+         and once declared gets applied to the complete html page -->
+
+        <!-- <style>
+            *{
+                font-style: italic;
+            }
+        </style> -->
+        <div>
+            <h1>Universal Selector</h1>
+            <p>This is a paragraph in Universal selection.</p>
+        </div>
+        
+        <!-- Attribute Selector -->
+
+        <!-- Attribute selectors are represented using [attribute] 
+         and once declared gets applied to the complete html page -->
+        <!-- The attribute selector is used to select elements with a specific attribute 
+         or attribute value.
+        It can be used to style elements based on their attributes, 
+        such as type, name, or any custom attribute. -->
+
+        <style>
+            [type="text"]{
+                background-color: lightblue;
+            }
+            [type="password"]{
+                background-color: lightgreen;
+            }
+        </style>
+
+        <div>
+            <h1>Attribute Selector</h1>
+            <input type="text" placeholder="Text Input">
+            <input type="password" placeholder="Password Input">
+        </div>
+
+        <!-- Descendant Selector -->
+        <!-- The descendant selector is used to select elements that are descendants of a specified element.
+    -->
+        <style>
+            .container h1{
+                color: rgb(79, 40, 180);
+            }
+            .container p{
+                color: rgb(101, 32, 145);
+            }
+        </style>
+
+        <div class="container">
+            <h1>Descendant Selector</h1>
+            <p>This is a paragraph in Descendant selection.</p>
+        </div>
+
+        <!-- Child Selector -->
+        <!-- The child selector is used to select elements that are direct children of a specified element. -->
+        <style>
+            .container > h1{
+                color: rgb(36, 149, 194);
+            }
+            .container > p{
+                color: rgb(152, 11, 11);
+            }
+        </style>
+        <div class="container">
+            <h1>Child Selector</h1>
+            <p>This is a paragraph in Child selection.</p>
+        </div>
+
+        <!-- Multiple / Group Selectors -->
+
+        <!-- The multiple selector is used to select multiple elements at once.
+        It allows you to apply the same styles to different elements without repeating the code. -->
+
+        <style>
+            .container, #container {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+        </style>    
+
+        
+    </div>
+</body>
+</html>
